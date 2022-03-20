@@ -1,4 +1,4 @@
-import { Euler, GroupProps, Vector3 } from "@react-three/fiber/native";
+import { Euler, Vector3 } from "@react-three/fiber/native";
 
 export interface PlaneProps {
   id: number;
@@ -11,6 +11,7 @@ export interface PlaneProps {
   clickEmitter: (id: number) => void;
 }
 
-export interface CubeProps extends GroupProps {
+export interface CubeProps {
   activePlaneEmitter: (id: number) => void;
+  gestureTranslationX: number;
 }

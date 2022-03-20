@@ -25,7 +25,7 @@ const List: FC<{activeItem: number}> = ({activeItem}) => {
     }
   }, [activeItem]);
 
-  const scrollHandler = (yPosition: number) => {
+  const scrollHandler = (yPosition: number): void => {
     ref?.scrollTo({
       y: yPosition,
       animated: true,
