@@ -13,5 +13,4 @@ export interface PlaneProps {
 
 export interface CubeProps {
   activePlaneEmitter: (id: number) => void;
-  gestureTranslationX: number;
 }
